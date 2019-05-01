@@ -1,0 +1,8 @@
+# Terraform
+*.tfstate
+*.tfstate.backup
+.terraform
+*.tfvars
+
+# OS-specific
+.DS_Store
