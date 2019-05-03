@@ -1,7 +1,11 @@
-from flask import Flask, abort, jsonify, request
-from tablestore import OTSClient, Row
+import os
 import json
 
+from dotenv import load_dotenv
+from flask import Flask, abort, jsonify, request
+from tablestore import OTSClient, Row
+
+load_dotenv()
 app = Flask(__name__)
 
 
@@ -47,4 +51,9 @@ def _to_dict(row):
 
 
 def _ots_client():
-  return OTSClient()
+    return OTSClient(
+        os.getenv("OTS_ENDPOINT"),
+        os.getenv("ACCESS_KEY_ID"),
+        os.getenv("ACCESS_KEY_SECRET"),
+        os.getenv("OTS_INSTANCE"),
+    )

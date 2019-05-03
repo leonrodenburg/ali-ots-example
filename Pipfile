@@ -9,7 +9,7 @@ black = "==19.3b0"
 [packages]
 tablestore = "==4.6.0"
 flask = "==1.0.2"
-
+python-dotenv = "==0.10.1"
 
 [requires]
 python_version = "3.7"
