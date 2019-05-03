@@ -4,5 +4,8 @@
 .terraform
 *.tfvars
 
+# Visual Studio Code
+.vscode
+
 # OS-specific
 .DS_Store
