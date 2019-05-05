@@ -5,6 +5,7 @@ verify_ssl = true
 
 [dev-packages]
 black = "==19.3b0"
+pylint = "==2.3.1"
 
 [packages]
 tablestore = "==4.6.0"
